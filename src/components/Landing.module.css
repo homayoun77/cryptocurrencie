@@ -1,0 +1,21 @@
+.container{
+    margin: 50px auto;
+    background-color: #f6f6f6;
+    border: 1px solid silver;
+    border-radius: 10px;
+    width: fit-content;
+}
+.search_bar{
+    padding: 15px 15px;
+    width: 400px;
+    margin-top: 50px;
+    border: 1px solid silver;
+    background-color: #f6f6f6;
+    border-radius: 5px;
+}
+.search_bar:focus{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    outline: none;
+    background-color: white;
+    border: none;
+}
