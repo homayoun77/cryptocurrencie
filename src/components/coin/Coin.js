@@ -8,7 +8,7 @@ function Coin({name, image, symbol, price, priceChange, marketCap}) {
         <span className={styles.name}>{name}</span>
         <span className={styles.symbol}>{symbol.toUpperCase()}</span>
         <span className={styles.price}>$ {price.toLocaleString()}</span>
-        <span className={ priceChange > 0 ? styles.green_price_change : styles.red_price_change}>{priceChange.toFixed(2)}</span>
+        <span className={ priceChange > 0 ? styles.green_price_change : styles.red_price_change}>{priceChange}</span>
         <span className={styles.market_cap}>$ {marketCap.toLocaleString()}</span>
     </div>
   )
