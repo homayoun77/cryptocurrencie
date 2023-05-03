@@ -4,7 +4,7 @@ import { getCoin } from '../services/api'
 import Loader from './loader/Loader'
 import Coin from './coin/Coin'
 
-import styles from './Landing.module.css'
+// import styles from './Landing.module.css'
 
 function Landing() {
 
@@ -27,11 +27,11 @@ function Landing() {
     const searched = coins.filter(coin => coin.name.toLowerCase().includes(search.toLowerCase()))
 
     return (
-        <div >
-            <input className={styles.search_bar} type="text" placeholder='Search...' value={search} onChange={searchHandler} />
+        <div className='bg-gray-700 flex justify-center items-center flex-col' >
+            <input className="w-80 h-12 shadow-md shadow-gray-800 bg-white p-4 m-16 focus:outline-none rounded-lg text-gray-900 md:w-[400px]" type="text" placeholder='Search...' value={search} onChange={searchHandler} />
             {
                 coins.length ?
-                    <div className={styles.container}>
+                    <div className="border rounded-md mb-10">
                         {
                             searched.map(coin => <Coin
                                     key={coin.id}
